@@ -4,5 +4,5 @@
 #outputs a scatter plot of each pair of variables.
 #performs any other analysis you think is appropriate
 
-print ("read me")
+print ("read me 2")
 #amend
