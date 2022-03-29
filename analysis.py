@@ -14,3 +14,7 @@ sns.set()
 #load the iris data
 iris_data = pd.read_csv('iris.csv')
 print (iris_data)
+#getting information from the data use info
+iris_data.info()
+#to plot
+sns.countplot(iris_data)
