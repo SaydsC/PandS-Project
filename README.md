@@ -12,4 +12,4 @@ The Iris dataset is a multivariate dataset with a default machine learning task 
 
 The Iris data set is a relatively small multi-variate data set containing of only 150 rows and 5 fields or variables in columns. Each observation in the Iris data set consists of a four dimensional array of numerical measurements and a single categorical class of iris species to which it belongs and represents one instance of an iris plant or flower.
 
-create Iris dataset and save in csv file
+create Iris dataset and save in csv file, learn how to read in the file and do a histogram
