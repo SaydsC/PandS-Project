@@ -8,13 +8,19 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt #for plotting
-import seaborn as sns
-from sklearn import metrics
-sns.set()
-#load the iris data
-iris_data = pd.read_csv('iris.csv')
-print (iris_data)
-#getting information from the data use info
-iris_data.info()
-#to plot
-sns.countplot(iris_data)
+
+data = pd.read_csv("iris.csv")
+print (data.head(150))
+data.describe()
+data.info()
+plt.figure(figsize = (10, 7))
+x = data['sepal.length']
+
+plt.hist(x, bins = 20, color = "green")
+plt.title("Sepal Length in cm")
+plt.xlabel("Sepal_Length_cm")
+plt.ylabel("Count")
+
+plt.show()
+
+
