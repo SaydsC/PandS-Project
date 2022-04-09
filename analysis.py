@@ -15,12 +15,17 @@ data.describe()
 data.info()
 plt.figure(figsize = (10, 7))
 x = data['sepal.length']
-
+#histogram for sepal length
 plt.hist(x, bins = 20, color = "green")
 plt.title("Sepal Length in cm")
 plt.xlabel("Sepal_Length_cm")
 plt.ylabel("Count")
 
+
+#scatter plot
+import seaborn as sns
+f = plt.figure(figsize=(11,6))
+fig = sns.scatterplot(x="sepal.length", y="petal.length", data=data)
 plt.show()
 
 
