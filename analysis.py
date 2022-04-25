@@ -18,11 +18,20 @@ data.info()
 plt.figure(figsize = (10, 7))
 x = data['sepal.length']
 
-#histogram for sepal length
-plt.hist(x, bins = 20, color = "cyan")
-plt.title("Sepal Length in cm")
-plt.xlabel("Sepal_Length_cm")
-plt.ylabel("Count")
+#histogram
+fig, axes = plt.subplots(2, 2, figsize=(10,10))
+
+axes[0,0].set_title("Sepal Length")
+axes[0,0].hist(data['sepal.length'], bins=7)
+
+axes[0,1].set_title("Sepal Width")
+axes[0,1].hist(data['sepal.width'], bins=5) 
+
+axes[1,0].set_title("Petal Length")
+axes[1,0].hist(data['petal.length'], bins=6)
+
+axes[1,1].set_title("Petal Width")
+axes[1,1].hist(data['petal.width'], bins=6)
 
 
 #scatter plot
@@ -43,6 +52,8 @@ fig=plt.gcf()
 fig.set_size_inches(10,7)
 fig=sns.heatmap(data.corr(),annot=True,cmap='cubehelix',linewidths=1,linecolor='k',square=True,mask=False, vmin=-1, vmax=1, cbar_kws={"orientation": "vertical"},cbar=True)
 plt.show()
+
+print(data.describe())
 
 
 
