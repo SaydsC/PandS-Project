@@ -14,8 +14,10 @@ data = pd.read_csv("iris.csv")
 print (data.head(150))
 data.describe()
 data.info()
+
 plt.figure(figsize = (10, 7))
 x = data['sepal.length']
+
 #histogram for sepal length
 plt.hist(x, bins = 20, color = "cyan")
 plt.title("Sepal Length in cm")
@@ -35,6 +37,12 @@ plt.show()
 
 data["variety"].value_counts()
 print (data.head(150))
+
+#Heat map
+fig=plt.gcf()
+fig.set_size_inches(10,7)
+fig=sns.heatmap(data.corr(),annot=True,cmap='cubehelix',linewidths=1,linecolor='k',square=True,mask=False, vmin=-1, vmax=1, cbar_kws={"orientation": "vertical"},cbar=True)
+plt.show()
 
 
 
