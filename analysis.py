@@ -17,7 +17,7 @@ data.info()
 plt.figure(figsize = (10, 7))
 x = data['sepal.length']
 #histogram for sepal length
-plt.hist(x, bins = 20, color = "green")
+plt.hist(x, bins = 20, color = "cyan")
 plt.title("Sepal Length in cm")
 plt.xlabel("Sepal_Length_cm")
 plt.ylabel("Count")
@@ -27,9 +27,14 @@ plt.ylabel("Count")
 import seaborn as sns
 f = plt.figure(figsize=(11,6))
 fig = sns.scatterplot(x="sepal.length", y="petal.length", data=data)
-plt.show()
 
 sns.set()
+#swarm plot grouping swarms by the variety of iris
+sns.swarmplot(x="variety", y="petal.length", data=data)
+plt.show()
+
+data["variety"].value_counts()
+print (data.head(150))
 
 
 
