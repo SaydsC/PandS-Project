@@ -9,18 +9,42 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt #for plotting
 import sys
-
-sys.stdout = open ("summary.txt","w")
-print ("\n")
+import seaborn as sns
 
 data = pd.read_csv("iris.csv")
-print (data.head(150))
-print (data.describe())
-print (data.info())
-print ("\n")
 
-dataset = np.genfromtxt("iris.csv", delimiter=',')
-print(dataset)
+def summary_to_file():
+    sys.stdout = open("summary.txt","w")
+    print ("\n")
+    print ("==============================================================================")
+    print ("Overview of the whole dataset:")
+    print ("\n")
+    print (data)
+    print ("\n")
+    print ("==============================================================================")
+    print ("Summary of numeric values: ")
+    print ("\n")
+    # reference for .describe() and .info(): https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
+    print (data.describe())
+    print ("\n")
+    print ("==============================================================================")
+    print ("Number of samples of each varirety of Iris:")
+    print ("\n")
+    print (data.info())
+    print ("\n")
+    print ("==============================================================================")
+    print("Number of occurances of each variety of Iris:")
+    print ("\n")
+    print (data["variety"].value_counts())
+    print ("\n")
+    print("     In percentile:")
+    print("\n")
+    # reference for normalize=True: https://towardsdatascience.com/getting-more-value-from-the-pandas-value-counts-aa17230907a6
+    print (((data["variety"].value_counts(normalize=True))*100))
+    print("\n")
+    print ("==============================================================================")
+    sys.stdout.close()
+
 
 #histogram amended to have 4 on one page
 fig, axes = plt.subplots(2, 2, figsize=(10,10))
@@ -58,8 +82,9 @@ fig.set_size_inches(10,7)
 fig=sns.heatmap(data.corr(),annot=True,cmap='cubehelix',linewidths=1,linecolor='k',square=True,mask=False, vmin=-1, vmax=1, cbar_kws={"orientation": "vertical"},cbar=True)
 plt.show()
 
-print(data.describe())
 
 
+data = pd.read_csv("Iris.csv")
 
+summary_to_file()
 
