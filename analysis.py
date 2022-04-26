@@ -61,7 +61,6 @@ axes[1,0].hist(data['petal.length'], bins=6)
 axes[1,1].set_title("Petal Width")
 axes[1,1].hist(data['petal.width'], bins=6)
 
-#f.close(file)
 
 #scatter plot
 import seaborn as sns
@@ -69,18 +68,22 @@ f = plt.figure(figsize=(11,6))
 fig = sns.scatterplot(x="sepal.length", y="petal.length", data=data)
 
 sns.set()
+
+#further analysis
+
 #swarm plot grouping swarms by the variety of iris
 sns.swarmplot(x="variety", y="petal.length", data=data)
 plt.show()
 
 data["variety"].value_counts()
-print (data.head(150))
+
 
 #Heat map
-fig=plt.gcf()
-fig.set_size_inches(10,7)
-fig=sns.heatmap(data.corr(),annot=True,cmap='cubehelix',linewidths=1,linecolor='k',square=True,mask=False, vmin=-1, vmax=1, cbar_kws={"orientation": "vertical"},cbar=True)
-plt.show()
+def heatmap():
+    fig=plt.gcf()
+    fig.set_size_inches(10,7)
+    fig=sns.heatmap(data.corr(),annot=True,cmap='cubehelix',linewidths=1,linecolor='k',square=True,mask=False, vmin=-1, vmax=1, cbar_kws={"orientation": "vertical"},cbar=True)
+    plt.show()
 
 
 
@@ -88,3 +91,4 @@ data = pd.read_csv("Iris.csv")
 
 summary_to_file()
 
+heatmap()
