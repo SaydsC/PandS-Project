@@ -5,16 +5,18 @@
 #performs any other analysis you think is appropriate
 
 #import libraries to work with the dataset iris.csv,
-from subprocess import _TXT
 import matplotlib
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt #for plotting
 
+f = open("summary.txt", "w")
+
 data = pd.read_csv("iris.csv")
 print (data.head(150))
-data.describe()
-data.info()
+print (data.describe())
+print (data.info())
+print ("\n")
 
 plt.figure(figsize = (10, 7))
 x = data['sepal.length']
