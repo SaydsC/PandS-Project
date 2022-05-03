@@ -39,7 +39,7 @@ def summary_to_file():
     print ("\n")
     print("     In percentile:")
     print("\n")
-    # reference for normalize=True: https://towardsdatascience.com/getting-more-value-from-the-pandas-value-counts-aa17230907a6
+    # reference: https://towardsdatascience.com/getting-more-value-from-the-pandas-value-counts-aa17230907a6
     print (((data["variety"].value_counts(normalize=True))*100))
     print("\n")
     print ("==============================================================================")
@@ -63,19 +63,22 @@ axes[1,1].hist(data['petal.width'], bins=6)
 
 
 #scatter plot
-import seaborn as sns
+#imported seaborn as sns above
 f = plt.figure(figsize=(11,6))
-fig = sns.scatterplot(x="sepal.length", y="petal.length", data=data)
+fig = sns.scatterplot(x="variety", y="petal.length", data=data)
 
 sns.set()
+plt.show()
 
 #further analysis
 
 #swarm plot grouping swarms by the variety of iris
-sns.swarmplot(x="variety", y="petal.length", data=data)
+f=plt.figure(figsize=(11,6))
+sns.swarmplot(x="sepal.width", y="sepal.length", hue="variety", data=data)
 plt.show()
 
 data["variety"].value_counts()
+print(pd.value_counts)
 
 
 #Heat map
@@ -84,10 +87,6 @@ def heatmap():
     fig.set_size_inches(10,7)
     fig=sns.heatmap(data.corr(),annot=True,cmap='cubehelix',linewidths=1,linecolor='k',square=True,mask=False, vmin=-1, vmax=1, cbar_kws={"orientation": "vertical"},cbar=True)
     plt.show()
-
-
-
-data = pd.read_csv("Iris.csv")
 
 summary_to_file()
 
