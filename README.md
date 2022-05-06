@@ -70,7 +70,9 @@ The output gives various overviews of the dataset e.g. summary, overview, number
 
 ### Histograms
 
-I then looked at creating the histogram, the origianl one I did as a starting point solely looked at sepal length. This command would need to be amended to draw data on the petal or variety of the Iris producing multiple histograms in separate files. I saved the histogram to the repository under the name iris_sepal_length_hist.png. We had previoulsy studied the plot function and I used hist to produce this histogram. One of the great benefits I have found using VS Code is that if I propose to use a command like hist I know it will work if the text autopopulates. It also calls out errors if I have indented my code incorrectly. As someone new to programming I find this wholly beneficial. Once I became more confident and had furthered my research I was able to amend my code to produce four histograms together on one file to allow for ease of comparison of the histograms looking sepal length, width, petal length, width. I found www.rpubs.com/analysisoftheirisdataset most beneficial here.
+I then looked at creating the histogram, the original one I did as a starting point solely looked at sepal length. This command would need to be amended to draw data on the petal or variety of the Iris producing multiple histograms in separate files. I saved the histogram to the repository under the name iris_sepal_length_hist.png. We had previoulsy studied the plot function and I used hist to produce this histogram. One of the great benefits I have found using VS Code is that if I propose to use a command like hist I know it will work if the text autopopulates. It also calls out errors if I have indented my code incorrectly. As someone new to programming I find this wholly beneficial. 
+
+Once I became more confident and had furthered my research I was able to amend my code to produce four histograms together on one file to allow for ease of comparison of the histograms looking sepal length, width, petal length, width. I found www.rpubs.com/analysisoftheirisdataset most beneficial here.
 
 ![Histogram](https://github.com/SaydsC/PandS-Project/blob/master/histogram.png)
 
@@ -79,6 +81,8 @@ I then looked at creating the histogram, the origianl one I did as a starting po
 The next step was to create a scatterplot.Up to now I hadn't imported seaborn but I found various references to its benefits in the use of scatter plots in my research. I researched the seaborn library at https://seaborn.pydata.org/generated/seaborn.scatterplot.html. Reading I found Seaborn is built on top of Python’s Matplotlib libray. Its function is to allow programmers to plot a graphical visualization using Python’s plotting language, and the code includes a tool to load it into Matplotlib. The benefit being that you can also use the data to understand how data is used and to gain a deep understanding of the different ways we can generate data. I wanted to try it out an imported as; import seaborn as sns.
 
 I first generated a scatterplot comparing the sepal length to petal length. I later alternated the code to look at the petal length by variety. This was very good to visually compare the different petal lengths and it was clear the setosa variety had the shortest petal length. I then used the "hue" feature in seaborn scatterplot to plot the varieties if Iris by colour. The output is the plotted relationship between the sepal length and sepal width of the three different varieties of the Iris.https://mldoodles.com/seaborn-scatterplot-hue-parameter/
+
+![Scatterplot](https://github.com/SaydsC/PandS-Project/blob/master/scatter plot petal length by variety.png)
 
 ### Further Analysis
 
