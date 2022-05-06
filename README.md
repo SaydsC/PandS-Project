@@ -82,7 +82,7 @@ The next step was to create a scatterplot.Up to now I hadn't imported seaborn bu
 
 I first generated a scatterplot comparing the sepal length to petal length. I later alternated the code to look at the petal length by variety. This was very good to visually compare the different petal lengths and it was clear the setosa variety had the shortest petal length. I then used the "hue" feature in seaborn scatterplot to plot the varieties if Iris by colour. The output is the plotted relationship between the sepal length and sepal width of the three different varieties of the Iris.https://mldoodles.com/seaborn-scatterplot-hue-parameter/
 
-![Scatterplot](https://github.com/SaydsC/PandS-Project/blob/master/scatter plot petal length by variety.png)
+![Scatterplot](https://github.com/SaydsC/PandS-Project/blob/master/scatterplot%20petal%20length%20by%20variety.png)
 
 ### Further Analysis
 
