@@ -80,9 +80,15 @@ Once I became more confident and had furthered my research I was able to amend m
 
 The next step was to create a scatterplot.Up to now I hadn't imported seaborn but I found various references to its benefits in the use of scatter plots in my research. I researched the seaborn library at https://seaborn.pydata.org/generated/seaborn.scatterplot.html. Reading I found Seaborn is built on top of Python’s Matplotlib libray. Its function is to allow programmers to plot a graphical visualization using Python’s plotting language, and the code includes a tool to load it into Matplotlib. The benefit being that you can also use the data to understand how data is used and to gain a deep understanding of the different ways we can generate data. I wanted to try it out an imported as; import seaborn as sns.
 
-I first generated a scatterplot comparing the sepal length to petal length. I later alternated the code to look at the petal length by variety. This was very good to visually compare the different petal lengths and it was clear the setosa variety had the shortest petal length. I then used the "hue" feature in seaborn scatterplot to plot the varieties if Iris by colour. The output is the plotted relationship between the sepal length and sepal width of the three different varieties of the Iris.https://mldoodles.com/seaborn-scatterplot-hue-parameter/
+I first generated a scatterplot comparing the sepal length to petal length. I later alternated the code to look at the petal length by variety. This was very good to visually compare the different petal lengths and it was clear the setosa variety had the shortest petal length. 
 
 ![Scatterplot](https://github.com/SaydsC/PandS-Project/blob/master/scatterplot%20petal%20length%20by%20variety.png)
+
+I then used the "hue" feature in seaborn scatterplot to plot the varieties if Iris by colour. The output is the plotted relationship between the sepal length and sepal width of the three different varieties of the Iris.https://mldoodles.com/seaborn-scatterplot-hue-parameter/
+
+![Scatterplothue](https://github.com/SaydsC/PandS-Project/blob/master/scatterplot%20variety%20hue.png)
+
+
 
 ### Further Analysis
 
