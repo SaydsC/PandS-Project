@@ -84,7 +84,7 @@ I first generated a scatterplot comparing the sepal length to petal length. I la
 
 ![Scatterplot](https://github.com/SaydsC/PandS-Project/blob/master/scatterplot%20petal%20length%20by%20variety.png)
 
-I then used the "hue" feature in seaborn scatterplot to plot the varieties if Iris by colour. The output is the plotted relationship between the sepal length and sepal width of the three different varieties of the Iris.https://mldoodles.com/seaborn-scatterplot-hue-parameter/
+I then used the "hue" feature in seaborn scatterplot to plot the three varieties of the Iris by colour. The output is the plotted relationship between the sepal length and sepal width of the three different varieties of the Iris. https://mldoodles.com/seaborn-scatterplot-hue-parameter/
 
 ![Scatterplothue](https://github.com/SaydsC/PandS-Project/blob/master/scatterplot%20variety%20hue.png)
 
