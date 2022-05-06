@@ -15,25 +15,25 @@ The Iris dataset is a multivariate dataset with a default machine learning task 
 The Iris data set is a relatively small multi-variate data set containing of only 150 rows and 5 fields or variables in columns. Each observation in the Iris data set consists of a four dimensional array of numerical measurements and a single categorical class of iris species to which it belongs and represents one instance of an iris plant or flower.
 
 The columns that represent the 5 variables are :
-SepalLength
-SepalWidth
-PetalLength
-PetalWidth
-Variety
+1. SepalLength
+2. SepalWidth
+3. PetalLength
+4. PetalWidth
+5. Variety
 
 The Iris dataset used in this analysis can be found among files in this repository as iris.csv.
 
-## Analysing the Dataset and developing the program
+## Developing a pporgram to analyse the Iris dataset
 
 To understand what libraries to import I researched the various references across the web in relation to the Data Iris set and also used librabries from our lectures,
 Matplotlib.pyplot library is most commonly used in Python in the field of machine learning according to https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/. Matploblib also has the benefit that it can provide graphs in both 2D and 3D. I have used this previously in our weekly tasks. I also imported numpy and pandas
 
 ### Imported libraries:
-  import pandas as pd
-  import numpy as np
-  import matplotlib.pyplot 
-  import sys
-  import seaborn as sns
+1.  import pandas as pd
+2.  import numpy as np
+3.  import matplotlib.pyplot 
+4.  import sys
+5.  import seaborn as sns
 
 I created Iris dataset from online resources and saved as csv file called iris.csv. There were many references recommending importing the data set through sklearn but I opted to create my own file and specify the column titles. I also work largely with excel and I wanted to be able to practise bringing these in to my programming learning. I used pandas as pd and created a command to read in the CSV file; 
 
