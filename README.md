@@ -37,10 +37,10 @@ Matplotlib.pyplot library is most commonly used in Python in the field of machin
 
 I created Iris dataset from online resources and saved as csv file called iris.csv. There were many references recommending importing the data set through sklearn but I opted to create my own file and specify the column titles. I also work largely with excel and I wanted to be able to practise bringing these in to my programming learning. I used pandas as pd and created a command to read in the CSV file; 
 
-  data = pd.read_csv("iris.csv")
+  `data = pd.read_csv("iris.csv")`
 
 Then using the print command I was able to get an output of the data set in the terminal. I was able to specify the number of rows of data required e.g. the full 150 varieties or restrict to 10 rows in the example below using command;
-  print (data.head(10)) where the variable is 10
+  `print (data.head(10))` where the variable is 10
 
        sepal.length  sepal.width  petal.length  petal.width variety
     0           5.1          3.5           1.4          0.2  Setosa
@@ -55,14 +55,14 @@ Then using the print command I was able to get an output of the data set in the 
     9           4.9          3.1           1.5          0.1  Setosa
 
 Once imported I was able to to use various commmands to draw whole data from the data set or specific data as specified in the column title in the csv file e.g. using commands such as;
-  data.describe()
-  data.info() 
+  `data.describe()`
+  `data.info()` 
 
-I then amended further do that the Dataset summary is not shown while starting the program, but output to analysis.txt.
+I then amended further so that the Dataset summary is not shown while starting the program, but output to analysis.txt.
 
 Function summary_to_file() is created for making the summary and writing it into the file at the same time.
-  def summary_to_file():
-    sys.stdout = open("summary.txt","w")
+  `def summary_to_file():`
+    `sys.stdout = open("summary.txt","w")`
 
 Writing outputs of the summary into a file is achieved with use of sys module and it's standard output stream stdout(as above)https://www.askpython.com/python/python-stdin-stdout-stderr. I had origianlly tried to redirect output but to no avail and this approach worked for me without requirement for directory paths.
 
@@ -98,11 +98,10 @@ The final component of the analysis, which compared mean values between groups, 
 
 ### Learnings/Potential Improvements
 
-During this project, I got a high-level introduction to data analysis for Python and what can be achieved using the libraries built for this purpose. I would recommend this dataset to anyone who is a beginner in data science and is eager to build their Machine Learning practise. 
-  See below for some of nice characteristics of this dataset:
-    -150 samples, with 4 attributes (same units, all numeric)
-    -Balanced class distribution (50 samples for each class)
-    -No missing data
+During this project, I got a high-level introduction to data analysis for Python and what can be achieved using the libraries built for this purpose. I would recommend this dataset to anyone who is a beginner in data science and is eager to build their Machine Learning practise based on the following characteristics of this dataset:
+  1.  -150 samples, with 4 attributes (same units, all numeric)
+  2.  -Balanced class distribution (50 samples for each class)
+  3.  -No missing data
 
 
 
