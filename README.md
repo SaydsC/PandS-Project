@@ -72,7 +72,7 @@ The output gives various overviews of the dataset e.g. summary, overview, number
 
 I then looked at creating the histogram, the origianl one I did as a starting point solely looked at sepal length. This command would need to be amended to draw data on the petal or variety of the Iris producing multiple histograms in separate files. I saved the histogram to the repository under the name iris_sepal_length_hist.png. We had previoulsy studied the plot function and I used hist to produce this histogram. One of the great benefits I have found using VS Code is that if I propose to use a command like hist I know it will work if the text autopopulates. It also calls out errors if I have indented my code incorrectly. As someone new to programming I find this wholly beneficial. Once I became more confident and had furthered my research I was able to amend my code to produce four histograms together on one file to allow for ease of comparison of the histograms looking sepal length, width, petal length, width. I found www.rpubs.com/analysisoftheirisdataset most beneficial here.
 
-![Histogram]("C:\Users\daith\OneDrive\Documents\Sadie Code\PandS-Project\histogram.png")
+![Histogram](https://github.com/SaydsC/PandS-Project/blob/master/histogram.png)
 
 ### Scatterplot
 
