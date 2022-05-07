@@ -88,6 +88,10 @@ def heatmap():
     fig=sns.heatmap(data.corr(),annot=True,cmap='cubehelix',linewidths=1,linecolor='k',square=True,mask=False, vmin=-1, vmax=1, cbar_kws={"orientation": "vertical"},cbar=True)
     plt.show()
 
+#Bivariate Analysis
+sns.pairplot(data, hue="variety",height=4)
+plt.show()
+
 summary_to_file()
 
 heatmap()

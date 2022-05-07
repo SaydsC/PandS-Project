@@ -40,7 +40,7 @@ I created Iris dataset from online resources and saved as csv file called iris.c
   `data = pd.read_csv("iris.csv")`
 
 Then using the print command I was able to get an output of the data set in the terminal. I was able to specify the number of rows of data required e.g. the full 150 varieties or restrict to 10 rows in the example below using command;
-  `print (data.head(10))` where the variable is 10
+  `print (data.head(10))` where the variable for the number of rows is specified as 10.
 
    |   |sepal.length|sepal.width|petal.length|petal.width|variety|
    |---|------------|-----------|------------|-----------|-------|
@@ -56,14 +56,14 @@ Then using the print command I was able to get an output of the data set in the 
    | 9 | 4.9 | 3.1 | 1.5 | 0.1 | Setosa|
 
 Once imported I was able to to use various commmands to draw whole data from the data set or specific data as specified in the column title in the csv file e.g. using commands such as;
-  `data.describe()`
+  `data.describe()` to get statistical insight like the count, mean values, standard deviation
   `data.info()` 
 
 I then amended further so that the Dataset summary is not shown while starting the program, but output to analysis.txt.
 
 Function summary_to_file() is created for making the summary and writing it into the file at the same time.
-  `def summary_to_file():`
-    `sys.stdout = open("summary.txt","w")`
+  ```def summary_to_file():```
+    ```sys.stdout = open("summary.txt","w")```
 
 To output the summary into a file I used the sys module and it's standard output stream stdout (per above code) https://www.askpython.com/python/python-stdin-stdout-stderr. I had origianlly tried to redirect output but to no avail and this approach worked for me without requirement for directory paths.
 
@@ -85,20 +85,29 @@ I first generated a scatterplot comparing the sepal length to petal length. I la
 
 ![Scatterplot](https://github.com/SaydsC/PandS-Project/blob/master/scatterplot%20petal%20length%20by%20variety.png)
 
-I then used the "hue" feature in seaborn scatterplot to plot the three varieties of the Iris by colour. The output is the plotted relationship between the sepal length and sepal width of the three different varieties of the Iris. https://mldoodles.com/seaborn-scatterplot-hue-parameter/
-
-![Scatterplothue](https://github.com/SaydsC/PandS-Project/blob/master/scatterplot%20variety%20hue.png)
-
 
 ### Further Analysis
 
 #### Swarmplot:
 In order to be able to display the data of each variety without them overlapping each other I used a swarmplot. The data is clearly visible and not obscurred by over plotting - the result allows you to see each distinct data point.There is also the further options to produce horizontal swarms.
 
+I then used the "hue" feature in seaborn scatterplot to plot the three varieties of the Iris by colour. The output is the plotted relationship between the sepal length and sepal width of the three different varieties of the Iris. https://mldoodles.com/seaborn-scatterplot-hue-parameter/
+
+![Scatterplothue](https://github.com/SaydsC/PandS-Project/blob/master/scatterplot%20variety%20hue.png)
+
+We can the the Setosa variety the smallest sepal length but has a larger width. The Versicolor sits in the middle middle for both sepal length as well as sepal width and the Virginica has the largest sepal lengths with smaller sepal widths
+
 #### Heatmap:
 Heat maps are used to find out the correlation between different features in a dataset. High positive or negative values shows that the features have high correlation. This helps us to select the parameters for machine learning. https://mer.vin/2019/08/seaborn. Correlation is a statistical measure that expresses the strength of the relationship between two variables. A good example I found where this can be used outside iris data was from https://vitalflux.com/correlation-heatmap-with-seaborn-pandas/. >"Correlation is often used to determine whether there is a cause-and-effect relationship between two variables. For example, if researchers want to know whether watching television causes obesity, they would examine the correlation between television viewing and obesity rates. If they found that there was a strong positive correlation, it would suggest that there may be a causal relationship. However, correlation does not necessarily imply causation; other factors may be at play. However, it is important to remember that correlation does not imply causation. For example, there may be a strong correlation between ice cream sales and swimming accidents, but that doesn’t mean that eating ice cream causes people to have accidents."
 
 ![Heatmap](https://github.com/SaydsC/PandS-Project/blob/master/Heatmap.png)
+
+#### Bivariate Analysis:
+Bivariate analysis is the analysis of the bivariate data. This is a single statistical analysis that is used to find out the relationship that exists between two value sets. The variables that are involved are X and Y. Pair Plots are one simple way to visually analyse the relationships between these variables. It produces a matrix of relationships between each variable in your the data. https://www.kaggle.com/code/akashrajsrinivasan/data-analysis-on-iris-dataset/notebook
+
+![Pairplot]()
+
+
 
 ### Conclusion
 
@@ -113,10 +122,10 @@ The final component of the analysis, which compared mean values between groups, 
 ### Learnings/Potential Improvements
 
 During this project, I got a high-level introduction to data analysis for Python and what can be achieved using the libraries built for this purpose. I would recommend this dataset to anyone who is a beginner in data science and is eager to build their Machine Learning practise based on the following characteristics of this dataset:
-  1.  -150 samples, with 4 attributes (same units, all numeric)
-  2.  -Balanced class distribution (50 samples for each class)
-  3.  -No missing data
-
+  1. 150 samples, with 4 attributes (same units, all numeric)
+  2. Balanced class distribution (50 samples for each class)
+  3. No missing data
+  4. four columns of numerical data with one column for the variety
 
 
 
