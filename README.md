@@ -6,7 +6,9 @@ PandS Module Project
 
 The Iris Dataset contains four features (length and width of sepals and petals) of 50 samples of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). These measures were used to create a linear discriminant model to classify the species. The dataset is often used in data mining, classification and clustering examples and to test algorithms.http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
 
-I used github to import iris dataset in python and to get instruction on how to use it and save it as a cvs file https://gist.github.com/srishtis/10d8e8cecfa128ff694bd8846f825135
+A population includes all of the elements from a data set whereas a sample consists one or more observation from the population. Samples are used to make statistical inferences about the population. Here we have the Iris as a population and the variety as the sample.
+
+I used github to import iris dataset in python and to get instruction on how to use it and save it as a csv file https://gist.github.com/srishtis/10d8e8cecfa128ff694bd8846f825135
 
 According to UCI Machine Learning Repository, the Iris dataset is widely used in pattern recognition learning. One class is linearly separable from the other two classes, which are not linearly separable from each other. The predicted attribute of the data set is the class of Iris plant to which each observation belongs.
 
@@ -127,7 +129,7 @@ During this project, I got a high-level introduction to data analysis for Python
   3. No missing data
   4. four columns of numerical data with one column for the variety
 
-
+Statistical and data analytical skills are now in high demand. As I ahve an interest in and work in an area collecting and analysing data this project has bettered my understanding of the basic statistical concepts and how I can use them in practise. 
 
 
 ### Further References
