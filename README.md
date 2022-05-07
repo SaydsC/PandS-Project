@@ -12,9 +12,10 @@ I used github to import iris dataset in python and to get instruction on how to 
 
 According to UCI Machine Learning Repository, the Iris dataset is widely used in pattern recognition learning. One class is linearly separable from the other two classes, which are not linearly separable from each other. The predicted attribute of the data set is the class of Iris plant to which each observation belongs.
 
-The Iris dataset is a multivariate dataset with a default machine learning task of classification. It consists of 150 instances with five attributes, with four of these being the measurements of the sepal and petals lengths and widths in the data set and the fifth being the class or variety of Iris that each observation belongs to. It includes 50 plants each of three classes of Iris plant, where each class is a different type or species of Iris plant. The three classes in the data set are the Iris Setosa, the Iris Versicolor and the Iris Virginica. The data set was donated in 1988 by Michael Marshall but the data set was created by R.A. Fisher in 1936.https://www.angela1c.com/projects/iris_project/the-iris-dataset/
 
-The Iris data set is a relatively small multi-variate data set containing of only 150 rows and 5 fields or variables in columns. Each observation in the Iris data set consists of a four dimensional array of numerical measurements and a single categorical class of iris species to which it belongs and represents one instance of an iris plant or flower.
+The Iris flower dataset is a multivariate dataset with a default machine learning task of classification. It consists of 150 instances with five attributes, with four of these being the measurements of the sepal and petals lengths and widths in the data set and the fifth being the class or variety of Iris that each observation belongs to. It includes 50 plants each of three classes of Iris plant, where each class is a different type or species of Iris plant. The three classes in the data set are the Iris Setosa, the Iris Versicolor and the Iris Virginica. The data set was donated in 1988 by Michael Marshall but the data set was created by British statistician and biologist Ronald .A. Fisher in 1936. https://www.angela1c.com/projects/iris_project/the-iris-dataset/ 
+
+The Iris data set is a relatively small data set containing of only 150 rows and 5 fields or variables in columns. Each observation in the Iris data set consists of a four dimensional array of numerical measurements and a single categorical class of iris varieties to which it belongs and represents one instance of an iris plant or flower.
 
 The columns that represent the 5 variables are :
 1. SepalLength
@@ -25,7 +26,7 @@ The columns that represent the 5 variables are :
 
 The Iris dataset used in this analysis can be found among files in this repository as iris.csv.
 
-## Developing a pporgram to analyse the Iris dataset
+## Program to analyse the Iris dataset
 
 To understand what libraries to import I researched the various references across the web in relation to the Data Iris set and also used librabries from our lectures,
 Matplotlib.pyplot library is most commonly used in Python in the field of machine learning according to https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/. Matploblib also has the benefit that it can provide graphs in both 2D and 3D. I have used this previously in our weekly tasks. I also imported numpy and pandas
