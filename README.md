@@ -105,7 +105,7 @@ Heat maps are used to find out the correlation between different features in a d
 #### Bivariate Analysis:
 Bivariate analysis is the analysis of the bivariate data. This is a single statistical analysis that is used to find out the relationship that exists between two value sets. The variables that are involved are X and Y. Pair Plots are one simple way to visually analyse the relationships between these variables. It produces a matrix of relationships between each variable in your the data. https://www.kaggle.com/code/akashrajsrinivasan/data-analysis-on-iris-dataset/notebook
 
-![Pairplot]()
+![Pairplot](https://github.com/SaydsC/PandS-Project/blob/master/Bivariate%20analysis.png)
 
 
 
