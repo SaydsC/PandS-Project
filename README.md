@@ -1,5 +1,7 @@
 PandS-Project
-PandS Module Project
+PandS Module Project 2022
+Author: Sadie Concannon
+
 # Iris Data Research
 
 ## The Iris Dataset
