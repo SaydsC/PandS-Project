@@ -10,6 +10,8 @@ Author: Sadie Concannon
 
 The Iris Dataset contains four features (length and width of sepals and petals) of 50 samples of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). These measures were used to create a linear discriminant model to classify the species. The dataset is often used in data mining, classification and clustering examples and to test algorithms.[1](http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html)
 
+![Iris](https://www.bing.com/images/search?view=detailV2&ccid=c8qywOU0&id=F0DD7681CA0285751925E43CF001D68B197E2843&thid=OIP.c8qywOU03Uz3DIOC54znmwHaFd&mediaurl=https%3a%2f%2fcdn-images-1.medium.com%2fmax%2f1200%2f1*plcDnA6sjme0RWvxbvaWgg.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.73cab2c0e534dd4cf70c8382e78ce79b%3frik%3dQyh%252bGYvWAfA85A%26pid%3dImgRaw%26r%3d0&exph=886&expw=1200&q=iris+data+set+&simid=607992980875403567&FORM=IRPRST&ck=5D66083CEA1A236512C1449AAF77C3C3&selectedIndex=6&ajaxhist=0&ajaxserp=0)
+
 A population includes all of the elements from a data set whereas a sample consists of one or more observation from the population. Samples are used to make statistical inferences about the population. Here we use the Iris as the population.
 
 My main objective in this project is to learn more about Python programming by applying it to the Iris data set. I used Visual Studio code to write my program and I used github to import the iris dataset and to get instruction on how to use it and save it as a csv file. [2](https://gist.github.com/srishtis/10d8e8cecfa128ff694bd8846f825135)
