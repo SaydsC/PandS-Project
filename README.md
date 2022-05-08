@@ -1,23 +1,25 @@
-PandS-Project
+Programming and Scripting
+
 PandS Module Project 2022
+
 Author: Sadie Concannon
 
 # Iris Data Research
 
 ## The Iris Dataset
 
-The Iris Dataset contains four features (length and width of sepals and petals) of 50 samples of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). These measures were used to create a linear discriminant model to classify the species. The dataset is often used in data mining, classification and clustering examples and to test algorithms.http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
+The Iris Dataset contains four features (length and width of sepals and petals) of 50 samples of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). These measures were used to create a linear discriminant model to classify the species. The dataset is often used in data mining, classification and clustering examples and to test algorithms[1](http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html)
 
 A population includes all of the elements from a data set whereas a sample consists one or more observation from the population. Samples are used to make statistical inferences about the population. Here we have the Iris as a population and the variety as the sample.
 
-I used github to import iris dataset in python and to get instruction on how to use it and save it as a csv file https://gist.github.com/srishtis/10d8e8cecfa128ff694bd8846f825135
+My main objective in this project is to learn more about Python programming by applying it to the Iris data set in this project. Iused Visual Studio code to write my program. I used github to import the iris dataset in python and to get instruction on how to use it and save it as a csv file https://gist.github.com/srishtis/10d8e8cecfa128ff694bd8846f825135
 
-According to UCI Machine Learning Repository, the Iris dataset is widely used in pattern recognition learning. One class is linearly separable from the other two classes, which are not linearly separable from each other. The predicted attribute of the data set is the class of Iris plant to which each observation belongs.
+According to UCI Machine Learning Repository, the Iris dataset is widely used in pattern recognition learning. One class is linearly separable from the other two classes, which are not linearly separable from each other. The predicted attribute of the data set is the class of Iris plant to which each observation belongs. Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.https://www.ibm.com/cloud/learn/machine-learning?msclkid=3efe2586ceb411ec87756ddd7a7b13ed
 
 
 The Iris flower dataset is a multivariate dataset with a default machine learning task of classification. It consists of 150 instances with five attributes, with four of these being the measurements of the sepal and petals lengths and widths in the data set and the fifth being the class or variety of Iris that each observation belongs to. It includes 50 plants each of three classes of Iris plant, where each class is a different type or species of Iris plant. The three classes in the data set are the Iris Setosa, the Iris Versicolor and the Iris Virginica. The data set was donated in 1988 by Michael Marshall but the data set was created by British statistician and biologist Ronald .A. Fisher in 1936. https://www.angela1c.com/projects/iris_project/the-iris-dataset/ 
 
-The Iris data set is a relatively small data set containing of only 150 rows and 5 fields or variables in columns. Each observation in the Iris data set consists of a four dimensional array of numerical measurements and a single categorical class of iris varieties to which it belongs and represents one instance of an iris plant or flower.
+Each observation in the Iris data set consists of a four dimensional array of numerical measurements and a single categorical class of iris varieties to which it belongs and represents one instance of an iris plant or flower.
 
 The columns that represent the 5 variables are :
 1. SepalLength
@@ -30,8 +32,11 @@ The Iris dataset used in this analysis can be found among files in this reposito
 
 ## Program to analyse the Iris dataset
 
-To understand what libraries to import I researched the various references across the web in relation to the Data Iris set and also used librabries from our lectures,
-Matplotlib.pyplot library is most commonly used in Python in the field of machine learning according to https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/. Matploblib also has the benefit that it can provide graphs in both 2D and 3D. I have used this previously in our weekly tasks. I also imported numpy and pandas
+To understand what libraries to import I researched the various references across the web in relation to the Data Iris set and also used librabries from our lectures and course weekly tasks.
+
+Matplotlib.pyplot library is most commonly used in Python in the field of machine learning according to https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/. Matploblib also has the benefit that it can provide graphs in both 2D and 3D. I have used this previously in our weekly tasks. pandas provides high-performance, easy-to-use data structures and data analysis tools for the Python programming language. It is designed for working with data that is in a tabular format containing an ordered collection of columns where each column can have a different value type. This makes it ideal for exploring a structured tabular dataset such as Iris which contains several numerical columns and one categorical column.
+
+NumPy is a Python library used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices. NumPy was created in 2005 by Travis Oliphant. It is an open source project and you can use it freely. NumPy stands for Numerical Python.https://www.w3schools.com/python/numpy/numpy_intro.asp
 
 ### Imported libraries:
 1.  import pandas as pd
@@ -40,7 +45,7 @@ Matplotlib.pyplot library is most commonly used in Python in the field of machin
 4.  import sys
 5.  import seaborn as sns
 
-I created Iris dataset from online resources and saved as csv file called iris.csv. There were many references recommending importing the data set through sklearn but I opted to create my own file and specify the column titles. I also work largely with excel and I wanted to be able to practise bringing these in to my programming learning. I used pandas as pd and created a command to read in the CSV file; 
+I created Iris dataset from online resources and saved as csv file called iris.csv. There were many references recommending importing the data set through sklearn but I opted to create my own file and specify the column titles. I also work largely with excel and I wanted to be able to practise bringing these data sets into my programming learning. Using pandas I wrote a command to read in the CSV file; 
 
   `data = pd.read_csv("iris.csv")`
 
@@ -62,9 +67,9 @@ Then using the print command I was able to get an output of the data set in the 
 
 Once imported I was able to to use various commmands to draw whole data from the data set or specific data as specified in the column title in the csv file e.g. using commands such as;
   `data.describe()` to get statistical insight like the count, mean values, standard deviation
-  `data.info()` 
+  `data.info()` to prints information about the dataset including the index dtype and columns, non-null values and memory usage.
 
-I then amended further so that the Dataset summary is not shown while starting the program, but output to analysis.txt.
+I then amended further so that the dataset summary is not shown while starting the program, but output to analysis.txt.
 
 Function summary_to_file() is created for making the summary and writing it into the file at the same time.
   ```def summary_to_file():```
@@ -77,6 +82,13 @@ The output gives various overviews of the dataset e.g. summary, overview, number
 ### Histograms
 
 I then looked at creating the histogram, the original one I did as a starting point solely looked at sepal length. This command would need to be amended to draw data on the petal or variety of the Iris producing multiple histograms in separate files. I saved the histogram to the repository under the name iris_sepal_length_hist.png. We had previoulsy studied the plot function and I used hist to produce this histogram. One of the great benefits I have found using VS Code is that if I propose to use a command like hist I know it will work if the text autopopulates. It also calls out errors if I have indented my code incorrectly. As someone new to programming I find this wholly beneficial. 
+
+It is beneficial to use a histogram when:
+
+1. The data is numerical
+2. You want to see the shape of the data’s distribution, especially when determining whether the output of a process is distributed approximately normally
+3. Determining whether the outputs of two or more processes are different
+4. You wish to communicate the distribution of data quickly and easily to others
 
 Once I became more confident and had furthered my research I was able to amend my code to produce four histograms together on one file to allow for ease of comparison of the histograms looking sepal length, width, petal length, width. I found www.rpubs.com/analysisoftheirisdataset most beneficial here.
 
@@ -122,7 +134,7 @@ In terms of distrubtion, we can see that the data is generally normally distribu
 
 The correlation output for the entire data set was markedly different from that for the individual species groups, suggesting that trends seen within the data as a whole are not necessarily evident within species groups.
 
-The final component of the analysis, which compared mean values between groups, found significant differences between all the species. This indicates that each of the three species groups have their own distinct characteristics in terms of flower shape/size.
+The final component of the analysis, which compared mean values between groups, found significant differences between all the species. This indicates that each of the three species groups have their own distinct characteristics in terms of flower shape/size. The setosa variety is easily separable linearly from the other two as they have some overlap of characteristics.
 
 ### Learnings/Potential Improvements
 
@@ -132,13 +144,15 @@ During this project, I got a high-level introduction to data analysis for Python
   3. No missing data
   4. four columns of numerical data with one column for the variety
 
-Statistical and data analytical skills are now in high demand. As I ahve an interest in and work in an area collecting and analysing data this project has bettered my understanding of the basic statistical concepts and how I can use them in practise. 
+Statistical and data analytical skills are now in high demand. As I have an interest in and work in an area collecting and analysing data this project has bettered my understanding of the basic statistical concepts and how I can apply them them to other data sets. Machine learning is an important component of the growing field of data science. Through the use of statistical methods, algorithms are trained to make classifications or predictions, uncovering key insights within data mining projects. These insights will subsequently drive decision making in industry, in their aim to meet key growth metrics. As big data continues to expand and grow, the market demand for data scientists will increase, requiring them to assist in the identification of the most relevant business questions and subsequently the data to answer them. Fishers Iris dataset is the ideal data set to develop the skills needed to properly assess big data.
 
 
 ### Further References
-https://archive.ics.uci.edu/ml/datasets/iris
-https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
-https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+1. https://archive.ics.uci.edu/ml/datasets/iris
+2. https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+3. https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+4. https://www.ibm.com/cloud/learn/machine-learning?msclkid=3efe2586ceb411ec87756ddd7a7b13ed
+
 
 
 
