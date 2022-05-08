@@ -140,13 +140,13 @@ The correlation output for the entire data set was markedly different from that 
 
 The final component of the analysis, which compared mean values between groups, found significant differences between all the species. This indicates that each of the three species groups have their own distinct characteristics in terms of flower shape/size. The setosa variety is easily separable linearly from the other two as they have some overlap of characteristics.
 
-### Learnings/Potential Improvements
+### Learnings
 
 During this project, I got a high-level introduction to data analysis for Python and what can be achieved using the libraries built for this purpose. I would recommend this dataset to anyone who is a beginner in data science and is eager to build their Machine Learning practise based on the following characteristics of this dataset:
   1. 150 samples, with 4 attributes (same units, all numeric)
   2. Balanced class distribution (50 samples for each class)
   3. No missing data
-  4. four columns of numerical data with one column for the variety
+  4. Four columns of numerical data with one column for the variety
 
 Statistical and data analytical skills are now in high demand. As I have an interest in and work in an area collecting and analysing data this project has bettered my understanding of the basic statistical concepts and how I can apply them them to other data sets. Machine learning is an important component of the growing field of data science. Through the use of statistical methods, algorithms are trained to make classifications or predictions, uncovering key insights within data mining projects. These insights will subsequently drive decision making in industry, in their aim to meet key growth metrics. As big data continues to expand and grow, the market demand for data scientists will increase, requiring them to assist in the identification of the most relevant business questions and subsequently the data to answer them. 
 
