@@ -115,7 +115,9 @@ I then used the "hue" feature in seaborn scatterplot to plot the three varieties
 We can easily see that the Setosa variety has the smallest sepal length but the largest width. The Versicolor sits in the middle for both sepal length as well as sepal width and the Virginica depicted in green has the largest sepal lengths with smaller sepal widths.
 
 #### Heatmap:
-Heat maps are used to find out the correlation between different features in a dataset. High positive or negative values shows that the features have high correlation. This helps us to select the parameters for machine learning. [12](https://mer.vin/2019/08/seaborn). Correlation is a statistical measure that expresses the strength of the relationship between two variables. A good example I found where this can be used outside iris data was from [13](https://vitalflux.com/correlation-heatmap-with-seaborn-pandas/). > "Correlation is often used to determine whether there is a cause-and-effect relationship between two variables. For example, if researchers want to know whether watching television causes obesity, they would examine the correlation between television viewing and obesity rates. If they found that there was a strong positive correlation, it would suggest that there may be a casual relationship. However, correlation does not necessarily imply causation; other factors may be at play. However, it is important to remember that correlation does not imply causation. For example, there may be a strong correlation between ice cream sales and swimming accidents, but that doesn’t mean that eating ice cream causes people to have accidents."
+Heat maps are used to find out the correlation between different features in a dataset. High positive or negative values shows that the features have high correlation. This helps us to select the parameters for machine learning. [12](https://mer.vin/2019/08/seaborn). Correlation is a statistical measure that expresses the strength of the relationship between two variables. A good example I found where this can be used outside iris data was from [13](https://vitalflux.com/correlation-heatmap-with-seaborn-pandas/). 
+
+>"Correlation is often used to determine whether there is a cause-and-effect relationship between two variables. For example, if researchers want to know whether watching television causes obesity, they would examine the correlation between television viewing and obesity rates. If they found that there was a strong positive correlation, it would suggest that there may be a casual relationship. However, correlation does not necessarily imply causation; other factors may be at play. However, it is important to remember that correlation does not imply causation. For example, there may be a strong correlation between ice cream sales and swimming accidents, but that doesn’t mean that eating ice cream causes people to have accidents."
 
 ![Heatmap](https://github.com/SaydsC/PandS-Project/blob/master/Heatmap.png)
 
@@ -154,6 +156,7 @@ Fishers Iris dataset is the ideal data set to develop the skills needed to prope
 2. https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 3. https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
 4. https://www.ibm.com/cloud/learn/machine-learning?msclkid=3efe2586ceb411ec87756ddd7a7b13ed
+5. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?msclkid=29ec18edcec111ecb98cc8dd61a84ff0
 
 
 
