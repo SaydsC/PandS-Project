@@ -77,7 +77,7 @@ Function summary_to_file() is created for making the summary and writing it into
   ```def summary_to_file():```
     ```sys.stdout = open("summary.txt","w")```
 
-To output the summary into a file I used the sys module and it's standard output stream stdout (per above code)[7](https://www.askpython.com/python/python-stdin-stdout-stderr). I had originally tried to redirect output but to no avail and this approach worked for me without requirement for directory paths.
+To output the summary into a file I used the sys module and it's standard output stream stdout (per above code)[7](https://www.askpython.com/python/python-stdin-stdout-stderr).
 
 The output gives various overviews of the dataset e.g. summary, overview, number of each variety.
 
